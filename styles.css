@@ -19,3 +19,55 @@
 .social-band{display:flex;justify-content:center;align-items:center;gap:28px;padding:20px 5%;background:var(--grain),var(--teal);color:var(--cream);letter-spacing:0;text-transform:none}
 .social-band:before,.social-band:after{content:'';height:1px;background:var(--gold);flex:1;max-width:340px}.social-band a{min-width:44px;min-height:44px;display:flex;flex-direction:column;align-items:center;gap:6px}.social-band a:hover{color:#ffbd54}.social-band a:focus-visible{outline-color:var(--cream)}.social-band span{font-size:10px;letter-spacing:.05em}
 @media(max-width:700px){.social-band{gap:9px;padding:16px 4%;justify-content:space-between}.social-band:before,.social-band:after{display:none}.social-band a{min-width:35px}.social-band svg{width:25px;height:25px}.social-band span{font-size:9px}}
+
+/* Alignment pass: explicit gutters keep lettering clear of the artwork. */
+.hero{grid-template-columns:55% 45%}
+.hero-copy{margin-left:0;align-self:start;padding:32px 5% 30px 0}
+.release-content{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px;align-items:start}
+.release-copy{min-width:0;padding-top:5px}
+.band-intro{padding-left:10%}
+.band-intro .ruled-heading{margin-right:140px}
+.band-copy{width:calc(100% - 140px);max-width:300px}
+.flower-art{width:120px;right:0;bottom:0}
+.illustrated-panel{display:flex;flex-direction:column}
+.panel-copy{flex:1;justify-content:flex-end}
+.panel-copy strong{white-space:nowrap}
+@media(min-width:1440px){.hero-copy{padding-top:46px;padding-bottom:30px}.band-copy{max-width:340px}}
+@media(min-width:701px) and (max-width:1000px){
+ .hero-copy{padding-top:24px;padding-bottom:20px}
+ .feature-row{display:block;padding:28px 5% 0}
+ .release{padding:0 0 30px}
+ .release-content{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:center}
+ .record-art{max-width:340px}
+ .release-copy h3{font-size:32px}.release-status{font-size:14px}.release-note{font-size:18px;max-width:320px}
+ .band-intro{padding:26px 0 30px;border-left:0;border-top:1px solid #ba8245;min-height:240px}
+ .band-intro .ruled-heading{margin-right:0}.band-intro .ruled-heading:before{display:block}
+ .band-copy{width:calc(100% - 170px);max-width:480px;font-size:23px}
+ .band-copy .button{font-size:14px;margin-top:22px;padding:12px 20px}
+ .flower-art{width:125px;right:10px}
+ .panel-copy strong{font-size:24px}.panel-copy small{font-size:9px;letter-spacing:.12em}
+}
+@media(max-width:700px){
+ .hero-copy{align-self:auto;padding:8px 6% 22px;margin:0}
+ .release-content{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:18px;align-items:center}
+ .release-copy{padding-top:0}
+ .band-intro{padding:25px 0 30px}
+ .band-intro .ruled-heading{margin-right:0}
+ .band-copy{width:calc(100% - 115px);max-width:370px;font-size:21px}
+ .band-copy .button{font-size:12px;letter-spacing:.09em;padding:12px;gap:10px;white-space:normal}
+ .flower-art{width:100px;right:0;bottom:12px}
+ .illustrated-panel{display:grid;grid-template-columns:43% 57%}
+ .panel-copy{justify-content:center;align-items:center;padding:18px 10px;min-height:124px}
+ .panel-copy strong{white-space:normal}
+}
+@media(max-width:460px){
+ .release-content{grid-template-columns:1fr;gap:20px}
+ .record-art{max-width:300px;margin:auto}
+ .release-copy{text-align:center;max-width:310px;margin:auto}
+ .release-copy h3{font-size:32px}
+ .release-status{font-size:14px}
+ .release-note{max-width:290px;margin:12px auto 0}
+ .music-links{justify-content:center;margin-top:20px}
+ .band-copy{width:calc(100% - 94px);font-size:20px}
+ .flower-art{width:82px;bottom:16px}
+}
