@@ -65,5 +65,8 @@ ET.parse(ROOT / 'sitemap.xml')
 assert 'Debut single coming soon' in html and 'No release date announced' in html
 assert not re.search(r'Perfect Strangers|spotify\.com|music\.apple\.com|<audio|<form', html, re.I)
 for asset in re.findall(r"url\(['\"]?([^)'\"]+)", (ROOT / 'styles.css').read_text()):
-    assert (ROOT / asset).is_file(), f'Missing CSS resource: {asset}'
+    if asset.startswith('#'):
+        assert asset[1:] in ids, f'Missing CSS filter: {asset}'
+    else:
+        assert (ROOT / asset).is_file(), f'Missing CSS resource: {asset}'
 print('PASS: balanced HTML; unique IDs; one h1/main; local assets; anchors/labels; unchanged music/social/contact URLs; exact analytics; preserved SEO/JSON-LD/domain files; no fabricated release links/title/audio/signup.')
