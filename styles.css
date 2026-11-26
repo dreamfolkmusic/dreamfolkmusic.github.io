@@ -10,3 +10,6 @@ nav a{display:inline-flex;align-items:center;min-height:44px}
 footer a{display:inline-flex;align-items:center;min-height:44px}
 @media(max-width:760px){.announcement{grid-template-columns:1fr;gap:0}}
 @media(max-width:360px){header{flex-wrap:wrap;gap:8px}nav{width:100%;justify-content:space-between}footer a{overflow-wrap:anywhere}}
+
+/* Retro-futurist identity */
+body{background:#292522;color:#f2dfc1}header{border-color:#b4935850}.wordmark span,em,.eyebrow{color:#e8ad79}.intro,.note,figcaption,.about p:not(.label),.announcement p:not(.label){color:#d6c5ae}.button{background:#e8ad79;color:#292522;border-radius:4px}.button:hover{background:#f2dfc1}.hero figure img,.robot-art svg{border-radius:12px;border:1px solid #b4935860}.robot-art svg{width:100%;height:auto;display:block}.music{background:#e8d8b9;color:#254b4b}.follow{background:#497c7c;color:#fff5e4}.follow em{color:#ffe0b0}.follow .socials a{border-color:#fff5e466}.follow a:focus-visible{outline-color:#fff5e4}.about p.manifesto{color:#e8ad79}.announcement{background:#342e29}.skip{background:#e8ad79;color:#292522}
