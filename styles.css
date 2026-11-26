@@ -104,8 +104,7 @@
  .hero-copy{padding-top:14px}
 }
 
-/* Lift the cream lettering and gold stars off the source's teal rectangle. */
-.logo-filter-defs{position:absolute;pointer-events:none}
-.header-logo{mix-blend-mode:normal;mask-image:none}
-.header-logo img{filter:url(#logo-ink)}
-.header-logo{clip-path:polygon(0 0,100% 0,100% 82%,92% 82%,92% 100%,0 100%)}
+
+/* The hero artwork carries the wordmark; the header contains navigation only. */
+.masthead{height:auto;min-height:64px;justify-content:flex-end;padding:10px 4%}
+@media(max-width:700px){.masthead{min-height:60px;padding:8px 5%}.masthead nav{width:100%;justify-content:space-between}}
