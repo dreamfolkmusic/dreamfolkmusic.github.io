@@ -26,3 +26,7 @@ The supplied approved mockup is a flattened image. Original layered files, separ
 ## Validation
 
 Run `python3 scripts/verify-site.py` to check structure, local resources, anchors, original links, analytics, release claims and preserved SEO against the pre-redesign commit. Browser-reviewed at 320, 390, 768, 1200 and 1440 CSS pixels. No horizontal overflow or off-screen text/link boxes at the checked widths. Mobile artwork selection, desktop artwork loading, main navigation, illustrated contact link and keyboard skip-to-content were checked. Skip-to-content moved focus to the main landmark. This is a focused accessibility review, not a complete assistive-technology audit. Email delivery, third-party account behavior and external social-preview cache refresh are not asserted. Deployment verification is reported in the task handoff.
+
+## Updated supplied artwork
+
+The November 26 follow-up supplies a clean website mockup and a separate 1254 × 1254 duo poster. The clean mockup (`vintage-layout.jpg` and its mobile variant) now supplies the logo, sleeve/vinyl, flowers and illustrated navigation. The intact duo poster (`robot-duo.jpg` and a 700 × 700 mobile variant) is the hero artwork, with a live headline and music button beside it on desktop and beneath it on mobile. The older distressed mockup frame is removed to match the cleaner reference. Existing alignment gutters, captions, release details, links, analytics and SEO are retained. Earlier source mockup assets are archived and no longer referenced by the page.
