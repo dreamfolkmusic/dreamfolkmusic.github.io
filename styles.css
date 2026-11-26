@@ -108,3 +108,29 @@
 /* The hero artwork carries the wordmark; the header contains navigation only. */
 .masthead{height:auto;min-height:64px;justify-content:flex-end;padding:10px 4%}
 @media(max-width:700px){.masthead{min-height:60px;padding:8px 5%}.masthead nav{width:100%;justify-content:space-between}}
+
+/* A compact opening brings the music section into view sooner. */
+@media(min-width:701px){
+ .teal-cover{position:relative;z-index:2;height:0}
+ .masthead{position:absolute;top:0;right:0;left:55%;min-height:56px;padding:6px 7% 6px 3%}
+ .masthead nav{width:100%;gap:20px;justify-content:space-between;font-size:13px}
+ .hero{grid-template-columns:55% 45%;max-height:640px;overflow:hidden;align-items:start}
+ .duo-poster{height:min(49vw,640px);overflow:hidden;align-self:start}
+ .duo-poster img{height:auto;width:100%}
+ .hero-copy{align-self:start;padding:82px 7% 30px}
+ .hero-eyebrow{margin-bottom:16px}
+ .hero .ornament{margin-top:16px}
+ .hero-tagline{margin-top:18px;font-size:clamp(34px,3.7vw,52px)}
+ .listen-button{margin-top:24px}
+ .hero-note{margin-top:12px}
+}
+@media(min-width:701px) and (max-width:1000px){
+ .masthead{padding:5px 5% 5px 2%}.masthead nav{gap:10px;font-size:11px;letter-spacing:.08em}
+ .hero-copy{padding:72px 6% 24px}
+ .hero-eyebrow{font-size:10px;margin-bottom:12px}
+ .hero-tagline{font-size:34px;margin-top:14px}
+ .hero .ornament{margin-top:12px}
+ .listen-button{margin-top:18px}
+}
+@media(max-width:700px){.hero-copy{padding:10px 7% 26px}.hero-eyebrow{margin-bottom:12px}.hero .ornament{margin-top:12px}.hero-tagline{margin-top:16px}.listen-button{margin-top:20px}}
+@media(min-width:1001px){.hero{max-height:580px}.duo-poster{height:min(49vw,580px)}.hero-tagline{max-width:440px;margin-left:auto;margin-right:auto;text-wrap:balance}}
