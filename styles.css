@@ -91,3 +91,15 @@
 @media(max-width:380px){.hero-tagline{font-size:36px}.hero .genres{font-size:11px;gap:10px}}
 
 .hero,.teal-cover{background-color:#06433e;background-image:var(--grain),radial-gradient(ellipse at 15% 100%,#32776b 0,transparent 75%)}
+
+/* One continuous teal surface, with soft artwork transitions rather than a poster edge. */
+.teal-cover{background:#003e3e}
+.hero{background-color:#003e3e;background-image:radial-gradient(ellipse at 65% 85%,#23665c 0,transparent 70%)}
+.duo-poster{mask-image:linear-gradient(to right,#000 88%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 5%,#000 100%);mask-composite:intersect}
+.hero-copy{position:relative}
+.header-logo{mix-blend-mode:lighten}
+@media(max-width:700px){
+ .hero{background-image:radial-gradient(ellipse at 35% 28%,#1d635c 0,transparent 65%)}
+ .duo-poster{mask-image:linear-gradient(to bottom,transparent 0,#000 5%,#000 85%,transparent 100%);mask-composite:add}
+ .hero-copy{padding-top:14px}
+}
